@@ -27,11 +27,11 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 # build a copy of the directory hierarchy that contains html files in place of md
 # files ( plus any other files the site needs from the markdown hierarchy ).
 # 
-# The html files are generated from the md files using a utility which relies
+# The html files are generated from the md files using webpage, a utility which relies
 # on the Commonmark rendering engine, i.e there's an assumption that the flavour of
 # markdown you are using is Commonmark compatible.  
 # 
-# The utility provides a mechanism for linking to css files, and if this is to be 
+# webpage provides a mechanism for linking to css files, and if this is to be 
 # done then this script must provide the relevant option, including an absolute 
 # path to the root of the html hierarchy ( which it works out for itself ). 
 #
