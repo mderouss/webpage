@@ -2,7 +2,7 @@
 ---
 ## webpage
 
-A 'C' program to combine body text with head metadata to make a *simple* web page.
+A 'C' program ( for Linux ) to combine body text with head metadata to make a *simple* web page.
 Really, brutally simple. That's the idea. 
 
 Usage :
