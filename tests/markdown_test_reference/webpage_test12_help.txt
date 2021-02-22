@@ -1,0 +1,22 @@
+Usage: webpage [-h] [-v] [-f <flags> ] [-c <abs path to html root>] [-n navembedcode] <markdown file>
+
+Broadly speaking, the expectation is that this tool will be used as part of a script that
+traverses a directory hierarchy containing md files and converts them to html. In particular,
+it's expected that the markdown file resides in the current working directory, and that this
+directory is underneath html root ( yes, html root not markdown root ).
+
+ -h                        : print this help
+ -v                        : output verbose information
+ -f <flags>                : <flags> are bitwise as follows -
+                           : 0x01 - omit DOCTYPE 
+                           : 0x02 - omit title 
+                           : 0x04 - omit datetime
+                           : 0x08 - omit author
+ -c <abs path to html root>: Enables linking to css file. File linked will be first found
+                             searching from cwd towards html root. NB Requires an absolute,
+                             not relative, path.
+ -n <navembedcode>         : Provide for ability to tack a special embedding on to the body for
+                             navigation purposes.
+ <markdown file>           : File containing Commonmark markdown. Beware of complications if
+                             this file is not in the cwd, particularly if using the 'c' option.
+

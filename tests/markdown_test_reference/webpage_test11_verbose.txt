@@ -1,0 +1,34 @@
+Verbose reporting ON
+Processing option v
+optind is 2, argc is 3
+Using webpage_test11.md as markdown filename
+Root filename is webpage_test11
+Using web page filename of webpage_test11.html
+Wrote 16 chars to file, tried 16 chars
+Wrote 7 chars to file, tried 7 chars
+Wrote 7 chars to file, tried 7 chars
+Writing Title as webpage_test11
+Wrote 7 chars to file, tried 7 chars
+Wrote 14 chars to file, tried 14 chars
+Wrote 9 chars to file, tried 9 chars
+Attempt to get username...
+...gives mark
+Wrote 4 chars to file, tried 4 chars
+Wrote 10 chars to file, tried 10 chars
+Wrote 4 chars to file, tried 4 chars
+Wrote 4 chars to file, tried 4 chars
+Time is 1613952043 
+Wrote 4 chars to file, tried 4 chars
+Wrote 12 chars to file, tried 12 chars
+Wrote 24 chars to file, tried 24 chars
+Wrote 4 chars to file, tried 4 chars
+Opening txt file webpage_test11.txt
+Txt file webpage_test11.txt not provided
+Wrote 8 chars to file, tried 8 chars
+Opened markdown file webpage_test11.md for read only
+Wrote 7 chars to file, tried 7 chars
+Parsing markdown file
+Rendering HTML
+Wrote 1483 chars to file, tried 1483 chars
+Wrote 8 chars to file, tried 8 chars
+Wrote 8 chars to file, tried 8 chars

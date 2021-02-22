@@ -1,0 +1,18 @@
+webpage_test1.md    -   normal markdown, plain text, h1 to h4. 
+webpage_test2.md    -   text per test1, with link to test1 md file.
+webpage_test3.md    -   text per test1, with inline <s></s> markup.
+webpage_test4.md    -   text per test1, with .txt include file.
+webpage_test4.txt   -   include file for test4. 
+webpage_test5.md    -   text per test1, html generated with DOCTYPE and Datetime omitted
+webpage_test6.md    -   text per test1, html generated with Author and Datetime omitted
+webpage_test7.md    -   text per test1, html generated with Title and Datetime omitted
+webpage_test8.md    -   text per test1, html generated with Datetime omitted
+webpage_test9.md    -   text per test1, html generated with local css file
+webpage_test9.css   -   local css file for test9, css directory is html root.
+webpage_test10.md   -   text per test1, html generated with navigation embedding supplied.
+webpage_test11.md   -   text per test1, generate verbose output
+webpage_test12.md   -   text per test1, print help 
+webpage_test13a.md  -   text per test1, css found in parent directory webpage_test13 ( webpage_test13.css )
+webpage_test13b.md  -   text per test1, css found in directory webpage_test13b ( webpage_test13b.css )
+
+
