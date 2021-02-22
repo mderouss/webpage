@@ -29,44 +29,10 @@ The generated HTML will be put in a file named after the provided .md file.
 -n adds HTML provided via this option to the end of the body. My purpose for this 
    is for adding an embedding to use as a navigation mechanism, but it's effectively
    general purpose. 
-
+   
 ---
 
-## webpages.sh
-
-A script to invoke webpage on a directory hierarchy. 
-
-This is a script that aims to take a website written in markdown, contained in a 
-single directory hierarchy ( i.e. a set of directories with a common root ), and
-build a copy of the directory hierarchy that contains html files in place of md
-files ( plus any other files the site needs from the markdown hierarchy ).
- 
-The html files are generated from the md files using webpage, a utility which relies
-on the Commonmark rendering engine, i.e there's an assumption that the flavour of
-markdown you are using is Commonmark compatible.  
- 
-webpage provides a mechanism for linking to css files, and if this is to be 
-done then this script must provide the relevant option, including an absolute 
-path to the root of the html hierarchy ( which it works out for itself ). 
-
-The navigation embed code is a special feature. If provided, it attaches the 
-provided embed code to the end of the html ( last thing before the </body> tag ).
-I have a use for this, you may not :). 
-
-Links within md files to other md files are converted into links to html files,
-because the assumption is that you've developed the whole site in markdown using
-something like ghostwriter, and those files may be cross linked. 
-
-Some tidy up is done to remove unwanted files from the html directory tree. 
-
- opt n is a navigation embed code ( defaults to none )
- opt m is the root of the markdown tree ( default is . )
- opt h is the root of the HTML tree ( default is ../${PWD##*/}_html )
- opt c is to turn on linking of css files ( default is false ) 
- opt F is flags options - specify special behaviors to webpage program, see webpage -h .
- opt v is to turn on verbose output ( default is false ).
-
----
+## What webpage does
 
 First, webpage adds a DOCTYPE declaration, but this can be omitted. This is
 almost certainly a mistake, but you can do it.
@@ -101,3 +67,40 @@ It uses the cmark library to convert md files to html. To be precise, it uses th
 library in UNSAFE mode, because this allows raw html to be specified in the md
 files, which is the only way the Commonmark designers allow basic shit like 
 strikethroughs that you've been able to do safely with a typewriter for 130 years.  
+
+---
+
+## webpages.sh
+
+A script to invoke webpage on a directory hierarchy. 
+
+-  opt v is to turn on verbose output ( default is false ).
+-  opt F is flags options - specify special behaviors to webpage program, see webpage -h .
+-  opt c is to turn on linking of css files ( default is false ) 
+-  opt h is the root of the HTML tree ( default is ../${PWD##*/}_html )
+-  opt n is a navigation embed code ( defaults to none )
+-  opt m is the root of the markdown tree ( default is . )
+
+This is a script that aims to take a website written in markdown, contained in a 
+single directory hierarchy ( i.e. a set of directories with a common root ), and
+build a copy of the directory hierarchy that contains html files in place of md
+files ( plus any other files the site needs from the markdown hierarchy ).
+ 
+The html files are generated from the md files using webpage, a utility which relies
+on the Commonmark rendering engine, i.e there's an assumption that the flavour of
+markdown you are using is Commonmark compatible.  
+ 
+webpage provides a mechanism for linking to css files, and if this is to be 
+done then this script must provide the relevant option, including an absolute 
+path to the root of the html hierarchy ( which it works out for itself ). 
+
+The navigation embed code is a special feature. If provided, it attaches the 
+provided embed code to the end of the html ( last thing before the </body> tag ).
+I have a use for this, you may not :). 
+
+Links within md files to other md files are converted into links to html files,
+because the assumption is that you've developed the whole site in markdown using
+something like ghostwriter, and those files may be cross linked. 
+
+Some tidy up is done to remove unwanted files from the html directory tree. 
+
