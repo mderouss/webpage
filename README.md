@@ -66,7 +66,9 @@ the .md file is in markdown format corresponding to the CommonMark standard.
 It uses the cmark library to convert md files to html. To be precise, it uses the
 library in UNSAFE mode, because this allows raw html to be specified in the md
 files, which is the only way the Commonmark designers allow basic shit like 
-strikethroughs that you've been able to do safely with a typewriter for 130 years.  
+strikethroughs that you've been able to do safely with a typewriter for 130 years.
+
+For a discussion of *why* this program exists, see my [blog]( http://www.markspace.org.uk/ASimpleBlog/ASimpleBlog.html ).  
 
 ---
 
